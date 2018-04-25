@@ -11,7 +11,7 @@ function init(){
 	btnRock = $("#btnRock");
 	btnPaper = $("#btnPaper");
 	btnScissors = $("#btnScissors");
-	btnGo = $('#btnGo');
+	btnGo = document.getElementById('btnGo');
 	deselectedAll();
 }
 function deselectedAll(){
@@ -95,7 +95,6 @@ function go(){
 	}
 	document.getElementById('endScreen').style.display = 'block';
 }
-//	alert(playerChoice + ', ' + computerChoice);
 function startGame(){
 	document.getElementById('introScreen').style.display = 'none';
 }
